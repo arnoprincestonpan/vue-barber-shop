@@ -1,22 +1,7 @@
 <template>
     <nav>
         <ul>
-            <PageLink variable="someVariable"></PageLink>
-            <li>
-                <router-link v-bind:to="{ name: pageNames.HOME }">Home</router-link>
-            </li>
-            <li>
-                <router-link v-bind:to="{ name: pageNames.BOOKING }">Booking</router-link>
-            </li>
-            <li>
-                <router-link v-bind:to="{ name: pageNames.CONTACT }">Contact Us</router-link>
-            </li>
-            <li>
-                <router-link v-bind:to="{ name: pageNames.SERVICES }">Services</router-link>
-            </li>
-            <li>
-                 <router-link v-bind:to="{ name: pageNames.SCHEDULES }">Schedules</router-link>
-            </li>
+            <PageLink v-for="name in pageNames" :pageName="name"></PageLink>
         </ul>
     </nav>
 </template>
