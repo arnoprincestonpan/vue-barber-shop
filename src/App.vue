@@ -1,7 +1,10 @@
-<script setup></script>
-
 <template>
-  <h1>Vue Barber Shop</h1>
+  <Header></Header>
+  <router-view></router-view>
 </template>
+
+<script setup>
+import Header from './components/Layout/Header.vue';
+</script>
 
 <style scoped></style>
