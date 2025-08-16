@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { pageNames } from '@/constants/pageNames';
+import { pageNames, linkPaths } from '@/constants/routeNames';
 import HomePage from '@/Home/HomePage.vue';
 import ContactPage from '@/Home/ContactPage.vue';
 import SchedulesPage from '@/Home/SchedulesPage.vue';
@@ -8,20 +8,20 @@ import BookingPage from '@/Home/BookingPage.vue';
 
 const routes = [
     {
-       path: "/", component: HomePage, name: pageNames.HOME
+       path: linkPaths.HOME, component: HomePage, name: pageNames.HOME
     },
     {
-        path:'/book', component: BookingPage, name: pageNames.BOOKING
+        path: linkPaths.BOOKING, component: BookingPage, name: pageNames.BOOKING
     },
     {
-        path: "/contact", component: ContactPage, name: pageNames.CONTACT
+        path: linkPaths.CONTACT, component: ContactPage, name: pageNames.CONTACT
     },
     ,
     {
-        path: '/services', component: ServicesPage, name: pageNames.SERVICES
+        path: linkPaths.SERVICES, component: ServicesPage, name: pageNames.SERVICES
     },
     {
-        path: '/schedules', component: SchedulesPage, name: pageNames.SCHEDULES
+        path: linkPaths.SCHEDULES, component: SchedulesPage, name: pageNames.SCHEDULES
     },
 ]
 

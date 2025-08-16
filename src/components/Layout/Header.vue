@@ -1,6 +1,7 @@
 <template>
     <nav>
         <ul>
+            <PageLink variable="someVariable"></PageLink>
             <li>
                 <router-link v-bind:to="{ name: pageNames.HOME }">Home</router-link>
             </li>
@@ -21,5 +22,6 @@
 </template>
 
 <script setup>
-import { pageNames } from '@/constants/pageNames';
+import { pageNames } from '@/constants/routeNames';
+import PageLink from '@/components/PageLink.vue';
 </script>
