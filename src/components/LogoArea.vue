@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img v-bind:src="logo" />
+        <img v-bind:src="logo" alt="vue barber shop" />
         <button v-on:click="router.push({ name: pageNames.BOOKING });">Book A Haircut</button>
     </div>
 </template>
