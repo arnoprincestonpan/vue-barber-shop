@@ -13,3 +13,25 @@ const props = defineProps({
     pageName: String,
 })
 </script>
+
+<style scoped>
+li {
+    list-style: none;
+
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: large;
+    color: black;
+}
+</style>
