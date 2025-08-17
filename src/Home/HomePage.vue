@@ -1,6 +1,7 @@
 <template>
-    <h1>Home Page</h1>
+    <LogoArea></LogoArea>
 </template>
 
 <script setup>
+import LogoArea from '@/components/LogoArea.vue'
 </script>

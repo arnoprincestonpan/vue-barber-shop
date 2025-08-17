@@ -40,6 +40,6 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 85.5vh;
 }
 </style>
