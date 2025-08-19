@@ -34,17 +34,21 @@ a {
     color: #36454F;
 }
 
-a:hover{
+a:hover {
     background-color: lightgreen;
-   color: lightseagreen;
+    color: lightseagreen;
 }
 
 @media screen and (max-width: 768px) {
     li {
         width: 100%;
     }
+
     a {
         flex-direction: column;
+
+        padding: 5px 10px;
+        font-size: larger;
     }
 }
 </style>

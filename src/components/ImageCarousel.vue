@@ -42,8 +42,8 @@ div{
 }
 
 img{
-    min-width: 200px;
-    max-width: 780px;
+    min-width: 300px;
+    max-width: 568px;
 
     margin-left: 1em;
     margin-right: 1em;

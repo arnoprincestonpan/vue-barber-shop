@@ -1,7 +1,6 @@
 <template>
   <div class="page">
     <Header></Header>
-    <LogoArea></LogoArea>
     <main>
       <router-view></router-view>
     </main>
