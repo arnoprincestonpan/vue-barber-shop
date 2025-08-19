@@ -17,11 +17,6 @@ const props = defineProps({
 <style scoped>
 li {
     list-style: none;
-
-    flex: 1;
-    padding: 10px 15px;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
 }
 
 a {
@@ -33,5 +28,14 @@ a {
 
     font-size: large;
     color: black;
+
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+a:hover{
+   color: grey;
 }
 </style>
