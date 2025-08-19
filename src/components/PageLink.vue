@@ -24,18 +24,27 @@ a {
     flex-direction: row;
     justify-content: center;
 
-    text-decoration: none;
-
-    font-size: large;
-    color: black;
-
     flex: 1;
     padding: 10px 15px;
     border: 1px solid lightgrey;
     border-radius: 5px;
+
+    text-decoration: none;
+    font-size: large;
+    color: #36454F;
 }
 
 a:hover{
-   color: grey;
+    background-color: lightgreen;
+   color: lightseagreen;
+}
+
+@media screen and (max-width: 768px) {
+    li {
+        width: 100%;
+    }
+    a {
+        flex-direction: column;
+    }
 }
 </style>

@@ -27,4 +27,12 @@ ul {
     gap: 0.5em;
     list-style: none;
 }
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        gap: 0;
+    }
+}
 </style>

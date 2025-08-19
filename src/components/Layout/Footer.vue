@@ -12,10 +12,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: last baseline;
 
         padding: 0.5rem;
 
         color: gray;
+
+        height: 100%;
     }
 </style>

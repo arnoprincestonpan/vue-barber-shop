@@ -1,7 +1,11 @@
 <template>
     <div>
-        <img v-bind:src="logo" alt="vue barber shop" />
-        <button v-on:click="router.push({ name: pageNames.BOOKING });">Book A Haircut</button>
+        <div class="image-container">
+            <img v-bind:src="logo" alt="vue barber shop" />
+        </div>
+        <div class="button-container">
+            <button v-on:click="router.push({ name: pageNames.BOOKING });">Book A Haircut</button>
+        </div>
     </div>
 </template>
 
@@ -14,24 +18,31 @@ const router = useRouter();
 </script>
 
 <style scoped>
-div {
+div{
     display: flex;
     flex-direction: column;
+}
 
+.image-container, .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-img{
-    margin-bottom: 0.5em;
+img {
+    min-width: 200px;
+
+    margin-left: 1em;
+    margin-right: 1em;
 
     border: 1px solid lightseagreen;
     border-radius: 12px;
-
     max-width: 300px;
-    height: auto;
 }
 
 button {
+    margin-top: 0.5em;
     background-color: lightseagreen;
 
     padding-top: 8px;
@@ -43,6 +54,7 @@ button {
     border-radius: 8px;
 
     color: white;
+    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px green;
 }

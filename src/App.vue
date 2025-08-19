@@ -1,6 +1,7 @@
 <template>
   <div class="page">
     <Header></Header>
+    <LogoArea></LogoArea>
     <main>
       <router-view></router-view>
     </main>
@@ -11,6 +12,7 @@
 <script setup>
 import Header from './components/Layout/Header.vue';
 import Footer from './components/Layout/Footer.vue';
+import LogoArea from './components/LogoArea.vue';
 </script>
 
 <style>
@@ -37,9 +39,7 @@ body {
 
   margin-left: 15%;
   margin-right: 15%;
-}
 
-main {
-  height: 87.3vh;
+  height: 100vh;
 }
 </style>
